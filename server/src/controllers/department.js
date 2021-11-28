@@ -1,5 +1,4 @@
 const Department = require('../models/department');
-const Suggestion = require('../models/suggestion');
 
 const get_all_departments = async (req, res) => {
     try {
@@ -49,7 +48,7 @@ const add_department = async (req, res) => {
 
 const delete_department = async (req,res)=>{
     try{
-        const removePost = await Department.findByIdAndDelete({_id:req.params.dep_id});
+        const removePost = await Department.findByIdAndDelete({_id:req.params.dep_Id});
         res.json(removePost); 
     }
     catch(err){
