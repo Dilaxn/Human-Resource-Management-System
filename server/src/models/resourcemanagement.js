@@ -9,7 +9,7 @@ const resourceallocation_schema = new mongoose.Schema({
         required: true,
     },
     totalproducts: {
-        type: Integer,
+        type: Number,
         required: true,
 
     },

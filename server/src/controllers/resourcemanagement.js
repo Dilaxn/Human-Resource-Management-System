@@ -1,5 +1,5 @@
 ///////////// controllers (resourceallocation.js)
-const ResourceAllocation = require('../models/resourceallocation');
+const ResourceAllocation = require('../models/resourcemanagement');
 
 const get_all_resourceallocations = async (req, res) => {
 try {

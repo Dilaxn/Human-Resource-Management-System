@@ -2,20 +2,20 @@
 
 const express = require('express');
 const {
-    add_suggestion,
-    update_suggestion,
-    get_suggestion,
-    get_all_suggestions,
-    delete_suggestion,
-} = require('../controllers/suggestion');
+    add_resourceallocation,
+    update_resourceallocation,
+    get_all_resourceallocations,
+    get_resourceallocation,
+    delete_resourceallocation,
+} = require('../controllers/resourcemanagement');
 const router = new express.Router();
 
 
-router.post('/api/addSuggestion', add_suggestion);
-router.delete('/api/deleteSuggestion/:suggestion_id',  delete_suggestion);
-router.patch('/api/updateSuggestion/:suggestion_id',  update_suggestion);
-router.get('/api/suggestion/:suggestion_id', get_suggestion);
-router.get('/api/suggestions/', get_all_suggestions);
+router.post('/api/addResource', add_resourceallocation);
+router.delete('/api/deleteResource/:resource_id',  delete_resourceallocation);
+router.patch('/api/updateResource/:resource_id',  update_resourceallocation);
+router.get('/api/resource/:resource_id', get_resourceallocation);
+router.get('/api/resources/', get_all_resourceallocations);
 
 
 module.exports = router;
