@@ -17,10 +17,13 @@ app.get("/api", (req, res) => {
 
 const suggestion_router = require("./src/routes/suggestion");
 const vacancy_router = require("./src/routes/vacancy");
+const user_router = require("./src/routes/user");
+
 
 app.use(cors());
 app.use(suggestion_router);
 app.use(vacancy_router);
+app.use(user_router);
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
