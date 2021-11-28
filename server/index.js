@@ -20,9 +20,13 @@ const dept_router = require("./src/routes/department");
 
 const suggestion_router = require("./src/routes/suggestion");
 
+const skill_router = require("./src/routes/skillmanagement");
+
 app.use(cors());
 app.use(vacancy_router);
 app.use(dept_router);
+
+app.use(skill_router);
 app.use(suggestion_router);
 
 
