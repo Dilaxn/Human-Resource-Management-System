@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://admin:projectbid@projectbid-cluster.jbt51.mongodb.net/hrm", {
+mongoose.connect("mongodb+srv://Viha27:Yashodha1127@cluster0.ohdsu.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-ybd5u0-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
